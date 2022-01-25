@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Maspet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/setup.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/lightslider.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
+  	<LINK REL="SHORTCUT ICON"  HREF="img/logo.ico">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="preloading">
+	<div class="loading">
+		<img src="img/loading.gif">
+	</div>
+	<!-- NAVIGATION -->
+	<nav id="topnav-fixed">
+            <div class="nav-sub">
+                <div class="nav-sub-main">
+                    <div class="nav-sub-contacts"><a href="Contact.html">Contacts</a></div>
+                    <div class="nav-sub-locations"><a href="#">Locations</a></div>
+                    <div class="en"><a href="#">En</a></div>
+                    <div class="vi"><a href="#">Vi</a></div>
+                </div>
+            </div>
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="Home-Login.html"><img src="img/logo.svg" alt=""></a>
+                </div>
+                <div class="nav-main-menu">
+                    <ul class="nav-main-menu-links">
+                        <li class="drop"><a href="Services.html" class="item">Services</a>
+                            <ul class="drop-down">
+                                <li><a href="Services.html">Dog Boarding</a></li>
+                                <li><a href="Services.html">Dog Daycare</a></li>
+                                <li><a href="Services.html">À La Carte</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="About.html" class="item">Information</a>
+                            <ul class="drop-down drop-down-about-us">
+                                <li><a href="About.html">About Us</a></li>
+								<li><a href="About.html">Experts</a></li>
+								<li><a href="About.html">Holiday Hours</a></li>
+								<li><a href="About.html">Policies</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="Event.html" class="item">Events</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Events 1</a></li>
+                                <li><a href="#">Events 2</a></li>
+                                <li><a href="#">Events 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Gallery.html" class="item">Gallery</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Gallery 1</a></li>
+                                <li><a href="#">Gallery 2</a></li>
+                                <li><a href="#">Gallery 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Mascams-login.html" class="item">MasCam</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">MasCam 1</a></li>
+                                <li><a href="#">MasCam 2</a></li>
+                                <li><a href="#">MasCam 3</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                    <div class="nav-main-menu-login-info">
+                        <div class="nav-main-menu-login-ava">
+                            <a href="Profile.html"><img src="img/nav-ava.png" alt=""></a>
+                        </div>
+                        <div class="nav-main-menu-noti">
+                            <img src="img/nav-noti-icon.png" alt="" class="nav-noti-icon">
+                            <div class="nav-main-menu-noti-content">
+                                <span class="nav-main-noti-heading">Notification</span>
+								<div class="nav-main-noti-line"></div>
+                                <div class="nav-main-noti-content-1">
+                                    <div class="nav-main-noti-foot-icon">
+                                        <img src="img/nav-noti-foot-icon.png" alt="">
+                                    </div>
+                                    <div class="nav-main-noti-content-1-text">
+                                        <span class="nav-main-noti-heading-1">Fri, 28 May 2021</span>
+										<p>You have earned 70 points when paying for LUXURY service.</p>
+                                    </div>
+                                </div>
+								<div class="nav-main-noti-content-2">
+                                    <div class="nav-main-noti-foot-icon">
+                                        <img src="img/nav-noti-foot-icon.png" alt="">
+                                    </div>
+                                    <div class="nav-main-noti-content-1-text">
+                                        <span class="nav-main-noti-heading-1">Mon, 4 May 2021</span>
+										<p>You have earned 25 points when paying for MORNING STCROLL service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="menurps">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+    </nav>
+	<!-- PROFILE -->
+	<div class="profile">
+        <div class="container">
+            <div class="profile-main">
+				<!-- MENU -->
+				<div class="profile-main-menu">
+					<div class="profile-fixed-menu" id="sidebar">
+						<div class="profile-main-menu-sticker tablinks active" data-electronic="user">
+							<div class="profile-main-menu-sticker-icon">
+								<img src="img/profile-user-icon.svg" alt="" width="24px">
+							</div>
+							<h6>User info</h6>
+							<img src="img/profile-arrow-right.svg" alt="" width="20px" class="arrow-hide">
+						</div>
+						<div class="profile-main-menu-sticker tablinks" data-electronic="setting">
+							<div class="profile-main-menu-sticker-icon">
+								<img src="img/profile-setting-icon.svg" alt="" width="22px">
+							</div>	
+							<h6>Setting</h6>
+							<img src="img/profile-arrow-right.svg" alt="" width="20px" class="arrow-hide">
+						</div>
+						<div class="profile-main-menu-sticker tablinks btnmember" data-electronic="member">
+							<div class="profile-main-menu-sticker-icon">
+								<img src="img/profile-member-icon.svg" alt=""width="30px">
+							</div>
+							<h6>Membership class</h6>
+							<img src="img/profile-arrow-right.svg" alt="" width="20px" class="arrow-hide">
+						</div>
+						<div class="profile-main-menu-sticker tablinks" data-electronic="history">
+							<div class="profile-main-menu-sticker-icon">
+								<img src="img/profile-history-icon.svg" alt="" width="22px">
+							</div>
+							<h6>History</h6>
+							<img src="img/profile-arrow-right.svg" alt="" width="20px" class="arrow-hide">
+						</div>
+						<img src="img/profile-dog.png" alt="" class="profile-dog">
+					</div>
+				</div>
+				
+				<div class="profile-main-tabs">
+					<!-- TABS_INFORMATION_USER -->
+					<div class="profile-main-tabs-user tabcontent active" id="user">
+						<div class="profile-main-tabs-user-header" >
+							<div class="profile-main-tabs-user-header-avatar" id="profile-container">
+								<img src="img/profile-avatar-icon.png" alt="" id="profileImage">
+								<input id="imageUpload" type="file" 
+								name="profile_photo" placeholder="Photo" required="" capture>
+							</div>
+							<div class="profile-main-tabs-user-header-text">
+								<h4>Hello, Cuong <span>#1257</span></h4>
+								<p>Ha Noi, Viet Nam</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-user-full-name">
+							<div class="profile-main-tabs-user-name">
+								<h6>First name:</h6>
+								<p>Do</p>
+							</div>
+							<div class="profile-main-tabs-user-name">
+								<h6>Last name:</h6>
+								<p>Van Cuong</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-user-info">
+							<div class="profile-main-tabs-user-info-heading">
+								<h6>Email:</h6>
+								<h6>Phone:</h6>
+								<h6>Address:</h6>
+							</div>
+							<div class="profile-main-tabs-user-info-input">
+								<p>CuongDo3092000@gmail.com</p>
+								<p>0849 268 105</p>
+								<p>No. 269, Tran Phu Street, Ha Dong, Ha Noi </p>
+							</div>
+						</div>
+					</div>
+					<!-- TABS_SETTING -->
+					<div class="profile-main-tabs-setting tabcontent" id="setting">
+						<div class="profile-main-tabs-user-header" >
+							<div class="profile-main-tabs-setting-header-avatar">
+								<div class="profile-main-tabs-user-header-avatar" id="profile-container">
+									<img src="img/profile-avatar-icon.png" alt="" id="profileImage" >
+									<input id="imageUpload" class="imageUpload" type="file" 
+									name="profile_photo" placeholder="Photo" required="" capture>
+								</div>
+								<img src="img/profile-setting-change-ava.png" alt="" class="profile-setting-change-ava" id="change-imgage">
+							</div>
+							<div class="profile-main-tabs-user-header-text">
+								<h4>Hello, Cuong <span>#1257</span></h4>
+								<p>Ha Noi, Viet Nam</p>
+							</div>
+						</div>
+						<form action="#">
+							<div class="profile-main-tabs-setting-input-info">
+								<div class="profile-main-tabs-setting-full-name">
+									<div class="profile-main-tabs-setting-name">
+										<label for="fname">First name </label>
+										<input type="text" id="fname" placeholder="Do">
+									</div>
+									<div class="profile-main-tabs-setting-name">
+										<label for="lname">Last name</label>
+										<input type="text" id="lname" placeholder="Van Cuong">
+									</div>
+								</div>
+								<div class="profile-main-tabs-setting-input">
+									<img src="img/profile-input-email-icon.svg" alt="" class="profile-input-icon">
+									<label for="email">Email</label>
+									<input type="email" id="email" placeholder="CuongDo3092000@gmail.com">
+								</div>
+								<div class="profile-main-tabs-setting-input">
+									<img src="img/profile-input-phone-icon.svg" alt="" class="profile-input-icon">
+									<label for="email">Phone</label>
+									<input type="phone" id="phone" pattern="[0-9]{10}" title="Ex: 0999666666" placeholder="0849 268 105">
+								</div>
+								<div class="profile-main-tabs-setting-input">
+									<img src="img/profile-input-address-icon.svg" alt="" class="profile-input-icon">
+									<label for="address">Address</label>
+									<input type="text" id="address" placeholder=" No.112, Tran Phu Street, Ha Noi">
+								</div>
+								<div class="profile-main-tabs-setting-btn">
+									<button class="btnmain" type="submit">Save changes</button>
+								</div>
+							</div>
+						</form>
+						<div class="profile-main-tabs-setting-input-pw">
+							<div class="profile-main-tabs-setting-input">
+								<img src="img/profile-input-key-icon.png" alt="" class="profile-input-key-icon">
+								<label for="oldpw">Old password</label>
+								<input type="password" id="oldpw" placeholder="Input old password">
+								<div id="eye" class="eye">
+									<i class="fas fa-eye login-pw-eye-icon"></i>
+								</div>
+							</div>
+							<div class="profile-main-tabs-setting-input">
+								<img src="img/profile-input-key-icon.png" alt="" class="profile-input-key-icon">
+								<label for="newpw">New password</label>
+								<input type="password" id="newpw" placeholder="Input new password">
+								<div id="eye2" class="eye">
+									<i class="fas fa-eye login-pw-eye-icon"></i>
+								</div>
+							</div>
+							<div class="profile-main-tabs-setting-input">
+								<img src="img/profile-input-key-icon.png" alt="" class="profile-input-key-icon">
+								<label for="address">Confirm new password</label>
+								<input type="text" id="address" placeholder=" Confirm new password">
+								<div id="eye3" class="eye">
+									<i class="fas fa-eye login-pw-eye-icon"></i>
+								</div>
+							</div>
+							<div class="profile-main-tabs-setting-btn">
+								<button class="btnmain" type="submit">Save changes</button>
+							</div>
+						</div>	
+					</div>
+					<!-- TABS_MEMBER -->
+					<div class="profile-main-tabs-member tabcontent" id="member">
+						<h3>Bronze</h3>
+						<div class="profile-main-tabs-member-linebg">
+							<div class="profile-main-tabs-member-line"></div>
+						</div>
+						<div class="profile-main-tabs-member-points">
+							<div>You have <br> <span class="t202">202</span> <span class="points">points</span>
+							</div>
+							<div>Points needed to go <span class="points">Silver: 448</span></div>
+						</div>
+						<h6>The MasPet Loyalty Program</h6>
+						<p class="table-text">The Program has four levels of Status, each with its own Benefit Privilege.</p>
+						<table>
+							<thead>
+								<tr>
+									<td><h4>Level</h4></td>
+									<td>
+										<img src="img/profile-member-point-1.png" alt="">
+										<h6>Member</h6>
+									</td>
+									<td>
+										<img src="img/profile-member-point-2.png" alt="">
+										<h6>Bronze</h6>
+									</td>
+									<td>
+										<img src="img/profile-member-point-3.png" alt="">
+										<h6>Silver</h6>
+									</td>
+									<td>
+										<img src="img/profile-member-point-4.png" alt="">
+										<h6>Gold</h6>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Suite Upgrade</td>
+									<td></td>
+									<td>1 level up to 2x/year</td>
+									<td>1 level</td>
+									<td>1 level</td>
+								</tr>
+								<tr>
+									<td>Wait List Priority</td>
+									<td>4th</td>
+									<td>3th</td>
+									<td>2th</td>
+									<td>1th</td>
+								</tr>
+								<tr>
+									<td>Birthday Treat</td>
+									<td>4th</td>
+									<td>3th</td>
+									<td>2th</td>
+									<td>1th</td>
+								</tr>
+								<tr>
+									<td>Points per Dollar</td>
+									<td>1</td>
+									<td>1.25</td>
+									<td>1.5</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Spend per Calendar Year</td>
+									<td>$0-999</td>
+									<td>$1,000-2,999</td>
+									<td>$3,000-5,999</td>
+									<td>$6,000+</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="earning-points">
+							<h6 >Earning Points</h6>
+							<p>Every dollar you spend at any of our Paradise 4 Paws, MasPet Hotel or MasPet Club* locations will earn you points.</p>
+						</div>
+						<div class="profile-main-tabs-member-earning">
+							<div class="profile-main-tabs-member-member">
+								<img src="img/profile-member-point-1.png" alt="">
+								<h6>Member</h6>
+								<div class="profile-main-tabs-member-box box-1">1</div>
+							</div>
+							<div class="profile-main-tabs-member-member">
+								<img src="img/profile-member-point-2.png" alt="">
+								<h6>Bronze</h6>
+								<div class="profile-main-tabs-member-box box-2">1.25</div>
+							</div>
+							<div class="profile-main-tabs-member-member">
+								<img src="img/profile-member-point-3.png" alt="">
+								<h6>Silver</h6>
+								<div class="profile-main-tabs-member-box box-3">1.5</div>
+							</div>
+							<div class="profile-main-tabs-member-member">
+								<img src="img/profile-member-point-4.png" alt="">
+								<h6>Gold</h6>
+								<div class="profile-main-tabs-member-box box-4">2</div>
+							</div>
+						</div>
+						<div class="profile-main-tabs-member-special-heading">
+							<h6>Special rights</h6>
+							Privileges for members from <span>Bronze</span> level up.
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Complimentary early check-in and late check-out
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Suite upgrades
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Wait list priority
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Reservations guarantee
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Birthday treats
+						</div>
+						<div class="profile-main-tabs-member-special">
+							<div class="profile-main-tabs-member-special-icon">
+								<img src="img/profile-member-foot-dog.png" alt="">
+							</div>
+							Members-only specials
+						</div>
+					</div>
+					<!-- TAB_HISTORY -->
+					<div class="profile-main-tabs-history tabcontent" id="history">
+						<h4>The MasPet Loyalty Program</h4>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Wed, 18 Jul 2021</p>
+								<p>Service usage: <span>ALL DAY PLAY PLUS</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>2:43 PM</p>
+								<p>15 $</p>
+								<p>+ 14</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Tue, 1 Jul 2021</p>
+								<p>Service usage: <span>ONE ON ONE</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>11:01 PM</p>
+								<p>25 $</p>
+								<p>+ 19</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Sat, 29 May 2021</p>
+								<p>Service usage: <span>DAYSTAY</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>2:11 PM</p>
+								<p>22 $</p>
+								<p>+ 17</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Fri, 28 May 2021</p>
+								<p>Service usage: <span>LUXURY</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>5:28 PM</p>
+								<p>387 $</p>
+								<p>+ 70</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Mon, 4 May 2021</p>
+								<p>Service usage: <span>MORNING STCROLL</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>6:43 PM</p>
+								<p>50 $</p>
+								<p>+ 25</p>
+							</div>
+						</div>
+						<div class="profile-main-tabs-history-info">
+							<div class="profile-main-tabs-history-text">
+								<p>Wed, 18 Jul 2021</p>
+								<p>Service usage: <span>ALL DAY PLAY PLUS</span> </p>
+								<p>Extra points:</p>
+							</div>
+							<div class="profile-main-tabs-history-number">
+								<p>2:43 PM</p>
+								<p>35 $</p>
+								<p>+ 20</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	<!-- BACK_TO_TOP -->
+	<div class="back-to-top">
+		<img src="img/back-to-top.svg" alt="">
+	</div>
+	<!-- FOOTER -->
+	<div class="footer" id="footer">
+		<div class="img-dog-footer">
+			<div class="img-dog">
+				<img src="img/dog-footer1.png" alt="">
+				<img src="img/dog-footer2.png" alt="">
+				<img src="img/dog-footer3.png" alt="">
+				<img src="img/dog-footer4.png" alt="">
+				<img src="img/dog-footer5.png" alt="">
+				<img src="img/dog-footer6.png" alt="">
+				<img src="img/dog-footer7.png" alt="">
+				<img src="img/dog-footer8.png" alt="">
+			</div>	
+		</div>	
+		<div class="footer-center">
+			<div class="container-fluid">
+				<div class="footer-main">
+					<div class="footer-about">
+						<div><img src="img/logofooter.svg"></div>
+						<p>
+						At MasPet, our love of dogs is at the heart of everything we
+						do. Our knowledgeable, experienced, caring staff is on-site
+						24 hours. So go ahead & take that trip you’ve been wanting
+						to; we’ve got everything taken care of!
+						</p>
+						<div class="more-about">
+							<a href="#">More about
+							<img src="img/Arrow_drop_right.svg">
+							</a>
+						</div>
+						<div class="copyright">© 2021 MasPet Boarding. All rights reserved</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>MasPet</h6></div>
+						<a href="#">Information</a>
+						<a href="#">Events</a>
+						<a href="#">Gallery</a>
+						<a href="#">MasCam</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Services</h6></div>
+						<a href="#">Boarding</a>
+						<a href="#">Daycare</a>
+						<a href="#">À La Carte</a>
+						<a href="#">Mas Perk®</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Contact</h6></div>
+						<div class="address">
+							<img class="icon-contact" src="img/Pin_light.svg">
+							No. 110, Tran Phu Street, Ha Noi
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Message_light.svg">
+							info1@MaspetPR.com
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Phone_light.svg">
+							(+84) 963 175 788
+						</div>
+						<div class="head-connect"><h6>Connect</h6></div>
+						<div class="icon-connect">
+							<a href="#" class="icon-fb"><img src="img/facebook.svg"></a>
+							<a href="#"><img src="img/instagram.svg"></a>
+							<a href="#"><img src="img/twitter.svg"></a>
+							<a href="#"><img src="img/tikkor.svg"></a>
+						</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Newsletter Sign up</h6></div>
+						<div class="email">Email</div>
+						<div class="input-mail">
+							<input type="email" name="email" required="" placeholder="Email Address" value="">
+							<img src="img/Send_fill.svg" alt="">
+						</div>
+						<div class="head-install"><h6>Install App</h6></div>
+						<div class="icon-install">
+							<a href="#"><img src="img/adroid.svg"></a>
+							<a href="#"><img src="img/ios.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<script>
+		ScrollReveal({
+        // reset: true,
+        distance: '300px',
+        duration: 2500,
+        delay: 400
+    	});
+		ScrollReveal().reveal('.heading-customer', { delay: 200, origin:'left'})
+		ScrollReveal().reveal('.headbooktitle', { delay: 200, distance: '0px', interval: 200});
+
+		// SHOW/HIDE TABS PROFILE
+		$(document).ready(function(){
+			var tabLinks = document.querySelectorAll(".tablinks");
+			var tabContent =document.querySelectorAll(".tabcontent");
+
+			tabLinks.forEach(function(el) {
+			el.addEventListener("click", openTabs);
+			});
+
+			function openTabs(el) {
+				var btn = el.currentTarget;
+				var electronic = btn.dataset.electronic;
+				
+				tabContent.forEach(function(el) {
+					el.classList.remove("active");
+				});
+
+				tabLinks.forEach(function(el) {
+					el.classList.remove("active");
+				});
+
+				document.querySelector("#" + electronic).classList.add("active");
+				
+				btn.classList.add("active");
+			}
+		})
+
+		//ADD A PICTURE PROFFILE
+		$(".profile-setting-change-ava").click(function(e) {
+			$(".imageUpload").click();
+		});
+
+		function fasterPreview(uploader) {
+			if (uploader.files && uploader.files[0]) {
+			$('#profileImage').attr('src',
+				window.URL.createObjectURL(uploader.files[0]));
+			}
+		}
+
+		$("#imageUpload").change(function() {
+			fasterPreview(this);
+		});
+
+		// POINT RUN
+		$(document).ready(function(){
+			$(".btnmember").click(function(){
+				$(".profile-main-tabs-member-line").addClass('point-run');
+			});
+		});
+		//FIXED_SIDEBAR_PROFILE
+		$(function() {
+			var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('marginTop').replace(/auto/, 0));
+			var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
+
+			var maxY = footTop - $('#sidebar').outerHeight();
+
+			$(window).scroll(function(evt) {
+				var y = $(this).scrollTop();
+				if (y >= top - $('#topnav-fixed').height()) {
+					if (y < maxY) {
+						$('#sidebar').addClass('fixed').removeAttr('style');
+					} else {
+						$('#sidebar').removeClass('fixed').css({
+							position: 'absolute',
+							top: (maxY - top) + 'px'
+						});
+					}
+				} else {
+					$('#sidebar').removeClass('fixed');
+				}
+			});
+		});
+	</script>
+	<svg id="svg">
+		<defs>
+			<filter id="colorFilter">
+				<feColorMatrix
+				color-interpolation-filters="sRGB"
+				type="matrix"
+				values="1.00 0 0 0 0
+						0 0.44 0 0 0
+						0 0 0.05 0 0
+						0 0 0 1 0 "/>
+			</filter>
+		</defs>
+	</svg>
+</body>
+</html>

@@ -1,0 +1,339 @@
+:root{
+	--color-body-text: #1E0B05;
+	--color-orange: #FF6F0C;
+	--color-heading: #41180B;
+	--color-heading-bgdark: #FDFBF2;
+	background: #FDFBF2;	
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #1E0B05;
+}
+
+@font-face{
+	font-family: main;
+	src: url(../font/Inter-Regular.ttf);
+}
+@font-face{
+	font-family: made-tommy-medium;
+	src: url(../font/MADE-TOMMY-Medium.otf);
+}
+@font-face{
+	font-family: made-tommy-regular;
+	src: url(../font/MADE-TOMMY-Regular.otf);
+}
+@font-face{
+	font-family: made-tommy-bold;
+	src: url(../font/MADE-TOMMY-Bold.otf);
+}
+@font-face {
+	font-family: made-tommy-extrabold;
+	src: url(../font/MADE-TOMMY-ExtraBold.otf);
+}
+@font-face {
+	font-family: gooddc;
+	src: url(../font/GOODDC.TTF);
+}
+@font-face {
+	font-family: text-decor;
+	src: url(../font/GOODDP.TTF);
+}
+.container-fluid{
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	position: relative;
+	padding: 0 3.1%;
+}
+.btnextra{
+	border-radius: 0.4rem;
+	border: 0.2rem solid #FF6F0C;
+	background: transparent;
+	color: #FF6F0C;
+	font-family: made-tommy-regular;
+	font-size: 1.6rem;
+	position: relative;
+	transition-property: color;
+  	transition-duration: 0.4s;
+
+}
+.btnextra:before{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content:'';
+	/* background: linear-gradient(to right, #FFA842, #FF6F0C); */
+	background-image: linear-gradient(
+      to right,
+      #FF6F0C,
+      #FF6F0C,
+      #FFA842,
+      #FF6F0C
+    );
+	background-size: 300% 100%;
+    z-index:-2;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+.btnextra:hover:before{
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+	background-position: 100% 0;
+}
+.btnextra a:hover , focus{
+	color: #fff;
+}
+.btnextra a{
+	color: #FF6F0C;
+	padding: 1rem 2.2rem;
+}
+.btnmain{
+	border: none;
+	border-radius: 0.4rem;
+	font-family: made-tommy-regular;
+	font-size: 1.6rem;
+	background: #FF6F0C;
+	color: #fff;
+	transition: all .4s ease-in-out;
+	background-size: 300% 100%;
+}
+.btnmain:hover{
+	background-position: 100% 0;
+	transition: all .4s ease-in-out;
+}
+.btnmain{
+	background-image: linear-gradient(
+      to right,
+      #FF6F0C,
+      #FF6F0C,
+      #FFA842,
+      #FF6F0C
+    );
+}
+.btnmain a{
+	color: #fff;
+	padding: 1.1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+input{
+	border: 0.1rem solid #1E0B05;
+	background: transparent;
+	border-radius: 0.8rem;
+	font-size: 1.6rem;
+	color: #776F6D;
+	font-family: main;
+}
+select{
+	border-radius: 0.8rem;
+	background: #FDFBF2;
+	padding-left: 3.2rem;
+	padding-right: 1.6rem;
+	font-size: 1.6rem;
+	font-family: main;
+	margin-top: 0.8rem;
+	appearance: none;
+}
+/* CUSTOMIZE CHECK BOX */
+input[type="checkbox"]{
+	opacity: 0;
+}
+.checkmark{
+	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	height: 2.4rem;
+  	width: 2.4rem;
+  	background-color: transparent;
+	border: 0.1rem solid #1E0B05;
+	border-radius: 0.3rem;
+}
+.checkmark::before{
+	content: "";
+	position: absolute;
+	display: none;
+}
+.checkmark::before {
+	left: 0.6rem;
+	top: 0.2rem;
+	width: 0.6rem;
+	height: 1.1rem;
+	border: solid rgb(255, 255, 255);
+	border-width: 0 0.3rem 0.3rem 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+input:checked ~ .checkmark::before {
+	display: block;
+}
+input:checked ~ .checkmark {
+	background-color: #FF6F0C;
+}
+
+
+/* HOVER IMG */
+.hover-img {
+	color: #fff;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	/* min-width: 220px;
+	max-width: 280px;
+	max-height: 375px; */
+	width: 100%;
+	background: #000000;
+	text-align: left;
+}
+.hover-img * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hover-img .img-main {
+	opacity: 1;
+	width: 100%;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+}
+.hover-img > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-img > div::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+	background-image: linear-gradient(45deg, #000000 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8));
+  }
+.hover-img p {
+	font-family: made-tommy-regular;
+	font-size: 2.8rem;
+	word-spacing: -0.1em;
+	font-weight: 400;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	padding: 60px 25px;
+	margin: 0;
+	line-height: 3.2rem;
+	position: absolute;
+	color: transparent;
+	text-shadow: 0 0 10px #ffffff;
+	text-align: right;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.hover-img p span {
+	font-weight: 700;
+}
+.hover-img .icon-img-hover {
+	display: inline-block;
+	padding: 12px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: 0.05s linear;
+	transition: 0.05s linear;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.hover-img .curl {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(225deg, #ffffff, #f3f3f3 20%, #bbbbbb 38%, #aaaaaa 44%, #888888 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.3));
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	transition: all .4s ease;
+}
+.hover-img .curl:before,
+.hover-img .curl:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 12%;
+	bottom: 6%;
+	width: 70%;
+	max-width: 300px;
+	max-height: 100px;
+	height: 55%;
+	box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+	transform: skew(-10deg) rotate(-6deg);
+}
+.hover-img .curl:after {
+	left: auto;
+	right: 6%;
+	bottom: auto;
+	top: 14%;
+	transform: skew(-15deg) rotate(-84deg);
+}
+.hover-img a {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	color: #ffffff;
+}
+.hover-img:hover > div p,
+.hover-img.hover > div p {
+  opacity: 1;
+  text-shadow: 0 0 0px #ffffff;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.hover-img:hover > div::before,
+.hover-img.hover > div::before {
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.hover-img:hover .icon-img-hover,
+.hover-img.hover .icon-img-hover {
+  opacity: 1;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.hover-img:hover .curl,
+.hover-img.hover .curl {
+  width: 90px;
+  height: 90px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+
+

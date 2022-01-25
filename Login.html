@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MasPet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/setup.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
+  	<LINK REL="SHORTCUT ICON"  HREF="img/logo.ico">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="preloading">
+	<div class="loading">
+		<img src="img/loading.gif">
+	</div>
+	<!-- NAVIGATION -->
+	<nav id="topnav">
+            <div class="nav-sub">
+                <div class="nav-sub-main">
+                    <div class="nav-sub-contacts"><a href="Contact.html">Contacts</a></div>
+                    <div class="nav-sub-locations"><a href="#">Locations</a></div>
+                    <div class="en"><a href="#">En</a></div>
+                    <div class="vi"><a href="#">Vi</a></div>
+                </div>
+            </div>
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="Home.html"><img src="img/logo.svg" alt=""></a>
+                </div>
+                <div class="nav-main-menu">
+                    <ul class="nav-main-menu-links">
+                        <li class="drop"><a href="Services.html" class="item">Services</a>
+                            <ul class="drop-down">
+                                <li><a href="Services.html">Dog Boarding</a></li>
+                                <li><a href="Services.html">Dog Daycare</a></li>
+                                <li><a href="Services.html">À La Carte</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="About.html" class="item">Information</a>
+                            <ul class="drop-down drop-down-about-us">
+                                <li><a href="About.html">About Us</a></li>
+								<li><a href="About.html">Experts</a></li>
+								<li><a href="About.html">Holiday Hours</a></li>
+								<li><a href="About.html">Policies</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="Event.html" class="item">Events</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Events 1</a></li>
+                                <li><a href="#">Events 2</a></li>
+                                <li><a href="#">Events 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Gallery.html" class="item">Gallery</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Gallery 1</a></li>
+                                <li><a href="#">Gallery 2</a></li>
+                                <li><a href="#">Gallery 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Mascams.html" class="item">MasCam</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">MasCam 1</a></li>
+                                <li><a href="#">MasCam 2</a></li>
+                                <li><a href="#">MasCam 3</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                    <div  class="nav-main-menu-button">
+                        <button class="btnextra"><a href="Login.html">Log in</a></button>
+                        <button class="btnmain"><a href="Signup.html">Sign up</a></button>
+                    </div>  
+                </div>
+                <div class="menurps">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+    </nav>
+	<!-- LOGIN -->
+	<div class="login">
+		<div class="container">
+			<div class="login-header">
+				<h1 class="login-heading">Login</h1>
+				<div class="login-header-text">
+					<p>If you already have an account?</p>
+					<a href="Signup.html">Sign up</a>
+				</div>
+			</div>
+			<div class="login-main">
+				<form action="Home-Login.html">
+					<div class="login-input">
+						<label for="email">Email*</label>
+						<div class="login-input-bar">
+							<img src="img/login-input-email-icon.svg" alt="" class="login-input-icon">
+							<input type="email" id="email" placeholder="Enter your email address" required>	
+						</div>
+					</div>
+					<div class="login-input">
+						<label for="password">Password*</label>
+						<div class="login-input-bar">
+							<i class="fas fa-key login-input-icon" ></i>
+							<input type="password" id="password" placeholder="Enter your password" required>
+							<div id="eye" class="eye">
+								<i class="fas fa-eye login-pw-eye-icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="login-checkbox">
+						<div>
+							 <label for="lgcheckbox" class="login-checkbox-label">
+								<input type="checkbox" id="lgcheckbox" name="signed">
+								Remember me
+								<span class="checkmark"></span>
+							 </label>
+						</div>
+						<a href="#">Forgot password?</a>
+					</div>
+					<div class="login-btn">
+						<button class="btnmain login-submit" type="submit"  onclick="myFunction()" >Log in</button>
+						<p>Or login with</p>
+					</div>
+				</form>
+				<div class="login-with-social-btn">
+					<button class="login-facebook-btn login-with-btn">
+						<img src="img/login-facebook-icon.png" alt="Facebook">
+						Log in with Facebook
+					</button>
+					<button class="login-google-btn login-with-btn">
+						<img src="img/login-google-icon.png" alt="Facebook">
+						Log in with Google
+					</button>
+				</div>
+			</div>
+		</div>
+	</div> 
+	
+	
+	<div class="back-to-top">
+		<img src="img/back-to-top.svg" alt="">
+	</div>
+	<!-- FOOTER -->
+	<div class="footer" id="footer">
+		<div class="img-dog-footer">
+			<div class="img-dog">
+				<img src="img/dog-footer1.png" alt="">
+				<img src="img/dog-footer2.png" alt="">
+				<img src="img/dog-footer3.png" alt="">
+				<img src="img/dog-footer4.png" alt="">
+				<img src="img/dog-footer5.png" alt="">
+				<img src="img/dog-footer6.png" alt="">
+				<img src="img/dog-footer7.png" alt="">
+				<img src="img/dog-footer8.png" alt="">
+			</div>	
+		</div>	
+		<div class="footer-center">
+			<div class="container-fluid">
+				<div class="footer-main">
+					<div class="footer-about">
+						<div><img src="img/logofooter.svg"></div>
+						<p>
+						At MasPet, our love of dogs is at the heart of everything we
+						do. Our knowledgeable, experienced, caring staff is on-site
+						24 hours. So go ahead & take that trip you’ve been wanting
+						to; we’ve got everything taken care of!
+						</p>
+						<div class="more-about">
+							<a href="#">More about
+							<img src="img/Arrow_drop_right.svg">
+							</a>
+						</div>
+						<div class="copyright">© 2021 MasPet Boarding. All rights reserved</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>MasPet</h6></div>
+						<a href="#">Information</a>
+						<a href="#">Events</a>
+						<a href="#">Gallary</a>
+						<a href="#">MasCam</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Services</h6></div>
+						<a href="#">Boarding</a>
+						<a href="#">Daycare</a>
+						<a href="#">À La Carte</a>
+						<a href="#">Mas Perk®</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Contact</h6></div>
+						<div class="address">
+							<img class="icon-contact" src="img/Pin_light.svg">
+							No. 110, Tran Phu Street, Ha Noi
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Message_light.svg">
+							info1@MaspetPR.com
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Phone_light.svg">
+							(+84) 963 175 788
+						</div>
+						<div class="head-connect"><h6>Connect</h6></div>
+						<div class="icon-connect">
+							<a href="#" class="icon-fb"><img src="img/facebook.svg"></a>
+							<a href="#"><img src="img/instagram.svg"></a>
+							<a href="#"><img src="img/twitter.svg"></a>
+							<a href="#"><img src="img/tikkor.svg"></a>
+						</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Newsletter Sign up</h6></div>
+						<div class="email">Email</div>
+						<div class="input-mail">
+							<input type="email" name="email" required="" placeholder="Email Address" onfocus="this.placeholder=''"value="">
+							<img src="img/Send_fill.svg" alt="">
+						</div>
+						<div class="head-install"><h6>Install App</h6></div>
+						<div class="icon-install">
+							<a href="#"><img src="img/adroid.svg"></a>
+							<a href="#"><img src="img/ios.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<script>
+		ScrollReveal({
+        // reset: true,
+        distance: '100px',
+        duration: 2500,
+        delay: 400
+    	});
+		ScrollReveal().reveal('.login-heading', { delay: 800, distance: '0', interval: 200});
+		$(document).ready(function(){
+			function myFunction() {
+  				alert("Logged in successfully");
+			}	
+		})
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Maspet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/setup.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
+  	<LINK REL="SHORTCUT ICON"  HREF="img/logo.ico">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="preloading">
+	<div class="loading">
+		<img src="img/loading.gif">
+	</div>
+    <!-- NAVIGATION -->
+	<nav id="topnav">
+        <div class="container-fluid">
+            <div class="nav-sub">
+                <div class="nav-sub-main">
+                    <div class="nav-sub-contacts"><a href="Contact.html">Contacts</a></div>
+                    <div class="nav-sub-locations"><a href="#">Locations</a></div>
+                    <div class="en"><a href="#">En</a></div>
+                    <div class="vi"><a href="#">Vi</a></div>
+                </div>
+            </div>
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="Home-Login.html"><img src="img/logo.svg" alt=""></a>
+                </div>
+                <div class="nav-main-menu">
+                    <ul class="nav-main-menu-links">
+                        <li class="drop"><a href="Services.html" class="item">Services</a>
+                            <ul class="drop-down">
+                                <li><a href="Services.html">Dog Boarding</a></li>
+                                <li><a href="Services.html">Dog Daycare</a></li>
+                                <li><a href="Services.html">À La Carte</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="About.html" class="item">Information</a>
+                            <ul class="drop-down drop-down-about-us">
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="About.html">Experts</a></li>
+								<li><a href="About.html">Holiday Hours</a></li>
+								<li><a href="About.html">Policies</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="Event.html" class="item">Events</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Events 1</a></li>
+                                <li><a href="#">Events 2</a></li>
+                                <li><a href="#">Events 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Gallery.html" class="item">Gallery</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">Gallery 1</a></li>
+                                <li><a href="#">Gallery 2</a></li>
+                                <li><a href="#">Gallery 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="drop"><a href="Mascams-login.html" class="item">MasCam</a>
+                            <!-- <ul class="drop-down">
+                                <li><a href="#">MasCam 1</a></li>
+                                <li><a href="#">MasCam 2</a></li>
+                                <li><a href="#">MasCam 3</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                    <div class="nav-main-menu-login-info">
+                        <div class="nav-main-menu-login-ava">
+                            <a href="Profile.html"><img src="img/nav-ava.png" alt=""></a>
+                        </div>
+                        <div class="nav-main-menu-noti">
+                            <img src="img/nav-noti-icon.png" alt="" class="nav-noti-icon">
+                            <div class="nav-main-menu-noti-content">
+                                <span class="nav-main-noti-heading">Notification</span>
+								<div class="nav-main-noti-line"></div>
+                                <div class="nav-main-noti-content-1">
+                                    <div class="nav-main-noti-foot-icon">
+                                        <img src="img/nav-noti-foot-icon.png" alt="">
+                                    </div>
+                                    <div class="nav-main-noti-content-1-text">
+                                        <span class="nav-main-noti-heading-1">Fri, 28 May 2021</span>
+										<p>You have earned 70 points when paying for LUXURY service.</p>
+                                    </div>
+                                </div>
+								<div class="nav-main-noti-content-2">
+                                    <div class="nav-main-noti-foot-icon">
+                                        <img src="img/nav-noti-foot-icon.png" alt="">
+                                    </div>
+                                    <div class="nav-main-noti-content-1-text">
+                                        <span class="nav-main-noti-heading-1">Mon, 4 May 2021</span>
+										<p>You have earned 25 points when paying for MORNING STCROLL service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="menurps">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- RESERVATION -->
+    <!-- POPUP -->
+    <div class="popup-overlay">
+        <div class="reservation-popup">
+            <div class="reservation-popup-main">
+                <div><img src="img/popup-reservation-icon.png" alt=""></div>
+                <span>Registration completed successfully </span>
+                <p>Your submission is received and we will contact you soon</p>  
+            </div>
+            <div class="popup-reservation-close">
+                <a href="Services.html"><img src="img/event-popup-close-icon.png" alt="" ></a>
+            </div>
+            <img src="img/reservation-popup-pt-1.png" alt="" class="reservation-popup-pt-1">
+            <img src="img/reservation-popup-pt-2.png" alt="" class="reservation-popup-pt-2">
+        </div>
+    </div>
+    <!-- Form -->
+    <div class="reversation">
+        <div class="container">
+            <div class="reversation-main">
+                <div class="reversation-header">
+                    <h1 ><span class="reservation-heading">Make</span> <span class="reservation-heading">A</span> <span class="reservation-heading">Reservation</span></h1>
+                </div>
+                <div class="reversation-form">
+                    <div class="reversation-main-input-name">
+                        <div class="reversation-input-name">
+                            <Label for="fname">First Name *</Label>
+                            <input type="text" id="fname" placeholder="Cuong">
+                        </div>
+                        <div class="reversation-input-name">
+                            <Label for="lname">Last Name *</Label>
+                            <input type="text" id="lname" placeholder="Do Van" >
+                        </div>
+                    </div>
+                    <div class="reversation-main-input-email">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" placeholder="CuongDo3092000@gmail.com">
+                    </div>
+                    <div class="reversation-main-input-email">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" pattern="[0-9]{10}" title="Ex: 0999666666" id="phone" placeholder="0849 268 105">
+                    </div>
+                    <div class="reversation-main-input-select">
+                        <div class="reversation-input-select">
+                            <Label for="boarding">Boarding *</Label>
+                            <select id="boarding" name="boarding" required="">
+                                <option value="">None</option>
+                                <option value="Morning Stroll">Condo</option>
+                                <option value="Mid Day Stroll">Classic</option>
+                                <option value="Evening Stroll">Luxury</option>
+                            </select>
+                            <img src="img/reversation-icon-select.png" alt="" class="reversation-icon-select"></img>
+                        </div>
+                        <div class="reversation-input-select">
+                            <Label for="daycare">Day Care *</Label>
+                            <select id="daycare" name="daycare">
+                                <option value="Morning Stroll">None</option>
+                                <option value="Morning Stroll">All Day Play Plus</option>
+                                <option value="Mid Day Stroll">Daystay</option>
+                                <option value="Evening Stroll">One On One</option>
+                            </select>
+                            <img src="img/reversation-icon-select.png" alt="" class="reversation-icon-select"></img>
+                        </div>
+                    </div>
+                    <div class="reversation-main-input-select">
+                        <div class="reversation-input-select">
+                            <Label for="alacarte">À La Carte *</Label>
+                            <select id="alacarte" name="alacarte">
+                                <option value="Morning Stroll">None</option>
+                                <option value="Morning Stroll">Morning Stcroll</option>
+                                <option value="Mid Day Stroll">Mid Day Stcroll</option>
+                                <option value="Evening Stroll">Evening Stcroll</option>
+                                <option value="Buddy Time">Buddy Time</option>
+                            </select>
+                            <img src="img/reversation-icon-select.png" alt="" class="reversation-icon-select"></img>
+                        </div>
+                        <div class="reversation-input-select">
+                            <Label for="servicestime">Service Date/Time *</Label>
+                            <input type="datetime-local" id="servicestime" name="servicestime" required>
+                        </div>
+                    </div>
+                    <div class="reversation-input-textarea">
+                        <label for="info">Other information</label>
+                        <textarea name="info" id="info" placeholder="Input other information"></textarea>
+                    </div>
+                    <div class="reversation-input-checkbox">
+                        <label for="yes" >
+                            <input type="checkbox" name="yes" id="yes" required="">
+                            Yes, please add me to the list for exclusive promotions and notifications (unsubscribe at any time)
+                            <span class="checkmark"></span>
+                        </label>
+                        <button class="btnmain btn-submit-reservation" type="submit">Submit</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	<div class="back-to-top">
+		<img src="img/back-to-top.svg" alt="">
+	</div>
+    <!-- FOOTER -->
+	<div class="footer" id="footer">
+		<div class="img-dog-footer">
+			<div class="img-dog">
+				<img src="img/dog-footer1.png" alt="">
+				<img src="img/dog-footer2.png" alt="">
+				<img src="img/dog-footer3.png" alt="">
+				<img src="img/dog-footer4.png" alt="">
+				<img src="img/dog-footer5.png" alt="">
+				<img src="img/dog-footer6.png" alt="">
+				<img src="img/dog-footer7.png" alt="">
+				<img src="img/dog-footer8.png" alt="">
+			</div>	
+		</div>	
+		<div class="footer-center">
+			<div class="container-fluid">
+				<div class="footer-main">
+					<div class="footer-about">
+						<div><img src="img/logofooter.svg"></div>
+						<p>
+						At MasPet, our love of dogs is at the heart of everything we
+						do. Our knowledgeable, experienced, caring staff is on-site
+						24 hours. So go ahead & take that trip you’ve been wanting
+						to; we’ve got everything taken care of!
+						</p>
+						<div class="more-about">
+							<a href="#">More about
+							<img src="img/Arrow_drop_right.svg">
+							</a>
+						</div>
+						<div class="copyright">© 2021 MasPet Boarding. All rights reserved</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>MasPet</h6></div>
+						<a href="#">Information</a>
+						<a href="#">Events</a>
+						<a href="#">Gallary</a>
+						<a href="#">MasCam</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Services</h6></div>
+						<a href="#">Boarding</a>
+						<a href="#">Daycare</a>
+						<a href="#">À La Carte</a>
+						<a href="#">Mas Perk®</a>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Contact</h6></div>
+						<div class="address">
+							<img class="icon-contact" src="img/Pin_light.svg">
+							No. 110, Tran Phu Street, Ha Noi
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Message_light.svg">
+							info1@MaspetPR.com
+						</div>
+						<div class="address">
+							<img class="icon-contact" src="img/Phone_light.svg">
+							(+84) 963 175 788
+						</div>
+						<div class="head-connect"><h6>Connect</h6></div>
+						<div class="icon-connect">
+							<a href="#" class="icon-fb"><img src="img/facebook.svg"></a>
+							<a href="#"><img src="img/instagram.svg"></a>
+							<a href="#"><img src="img/twitter.svg"></a>
+							<a href="#"><img src="img/tikkor.svg"></a>
+						</div>
+					</div>
+					<div class="footer-link">
+						<div class="head-footer"><h6>Newsletter Sign up</h6></div>
+						<div class="email">Email</div>
+						<div class="input-mail">
+							<input type="email" name="email" required="" placeholder="Email Address" onfocus="this.placeholder=''"value="">
+							<img src="img/Send_fill.svg" alt="">
+						</div>
+						<div class="head-install"><h6>Install App</h6></div>
+						<div class="icon-install">
+							<a href="#"><img src="img/adroid.svg"></a>
+							<a href="#"><img src="img/ios.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<script>
+		// ScrollReveal({
+        // // reset: true,
+        // // distance: '150px',
+        // duration: 2500,
+        // delay: 400
+    	// });
+        ScrollReveal().reveal('.reservation-heading', { delay: 800,distance:'0', duration: 2500, interval: 200});
+        
+        let popupereservation = document.querySelector(".popup-overlay")
+        let closereservation = document.querySelector(".popup-reservation-close")
+        let btnreservation = document.querySelector(".btn-submit-reservation")
+
+        btnreservation.addEventListener('click', () => {
+			popupereservation.classList.add('popup-active');
+        });
+		closereservation.addEventListener('click', () => {
+			popupereservation.classList.remove('popup-active');
+        });
+	</script>
+</body>
+</html>
